@@ -1,0 +1,40 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter ----------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Project data + generated artifacts -------------------------------------
+# `data/` holds raw inputs (fire registries, shapefiles, DEM TIFFs, ERA5-Land
+# NetCDFs) — large and not redistributable here. See docs/data-sources.md for
+# where to obtain each file.
+data/
+
+# Pipeline outputs (CSVs, figures). Fully reproducible from the package.
+outputs/
+
+# Runtime caches (Open-Meteo HTTP cache, etc.).
+.cache/
+
+# --- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+*~
